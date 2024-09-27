@@ -24,7 +24,7 @@ const buierIdentity={
 
     name,email,location,date, image
 }
-fetch("http://localhost:5000/order",{
+fetch("https://car-doctor-backend-side.vercel.app/order",{
 
     method:"POST",
     headers: {

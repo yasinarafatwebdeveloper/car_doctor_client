@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       {
         path:"/check/:id",
         element: <Private><Checkout></Checkout></Private>,
-        loader:({params})=>fetch(`http://localhost:5000/service/${params.id}`)
+        loader:({params})=>fetch(`https://car-doctor-backend-side.vercel.app/service/${params.id}`)
       },
       {
         path:"/book",

@@ -20,7 +20,7 @@ const view=confirm("do you want to delete it?")
 if(view){
 
 
-  fetch(`http://localhost:5000/order/${id}`,{
+  fetch(`https://car-doctor-backend-side.vercel.app/order/${id}`,{
     method:"DELETE"
   })
   .then(res=>res.json())
@@ -43,12 +43,12 @@ if(view){
       
     useEffect(()=>{
 
-      axios.get("http://localhost:5000/order")
+      axios.get("https://car-doctor-backend-side.vercel.app/order")
       .then(res=>{
 
       setBook(res.data);
       })
-// fetch("http://localhost:5000/order")
+// fetch("https://car-doctor-backend-side.vercel.app/order")
 // .then(res=>res.json())
 // .then(data=>setBook(data))
 
